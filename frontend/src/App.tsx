@@ -5,7 +5,8 @@ import {
   Navigate,
 } from "react-router-dom";
 import Layout from "./layouts/Layout";
-import Register from "./pages/Register"
+import Register from "./pages/Register";
+import SignIn from "./pages/SignIn";
 
 const App = () => {
   return (
@@ -32,6 +33,14 @@ const App = () => {
           element={
             <Layout>
               <Register />
+            </Layout>
+          }
+        />
+        <Route
+          path="/sign-in"
+          element={
+            <Layout>
+              <SignIn />
             </Layout>
           }
         />
