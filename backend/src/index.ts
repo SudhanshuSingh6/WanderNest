@@ -30,7 +30,7 @@ app.use(
 app.use(express.static(path.join(__dirname, "../../frontend/dist")));
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
-app.use("/api/my-hotel", myHotelRoutes);
+app.use("/api/my-hotels", myHotelRoutes);
 
 app.listen(4000, () => {
   console.log("server started");
